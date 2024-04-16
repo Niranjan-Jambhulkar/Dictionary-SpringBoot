@@ -1,27 +1,32 @@
-package com.model;
+package com.dictionary;
 
 import java.util.Objects;
+import com.dictionary.*;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="mydictionary")
-public class DictionaryEntity {
+@Table (name ="mydictionary")
+public class Dictionary {
 	@Id
 	private String word;
 	private String meaning;
 	
-	public DictionaryEntity(String word, String meaning) {
+
+
+	public Dictionary(String word, String meaning) {
 		super();
 		this.word = word;
 		this.meaning = meaning;
 	}
 
-	public DictionaryEntity() {
+
+	public Dictionary() {
 		super();
 	}
+
 
 	public String getWord() {
 		return word;
@@ -52,13 +57,13 @@ public class DictionaryEntity {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		DictionaryEntity other = (DictionaryEntity) obj;
+		Dictionary other = (Dictionary) obj;
 		return Objects.equals(word, other.word);
 	}
 
 	@Override
 	public String toString() {
-		return "DictionaryEntity [word=" + word + ", meaning=" + meaning + "]";
+		return "Dictionary [word=" + word + ", meaning=" + meaning + "]";
 	}
 	
 	
