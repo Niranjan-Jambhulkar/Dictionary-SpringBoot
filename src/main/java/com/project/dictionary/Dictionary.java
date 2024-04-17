@@ -1,7 +1,8 @@
-package com.dictionary;
+package com.project.dictionary;
 
 import java.util.Objects;
-import com.dictionary.*;
+
+import com.project.dictionary.*;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

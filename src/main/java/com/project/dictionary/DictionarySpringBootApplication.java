@@ -1,4 +1,4 @@
-package com.dictionary;
+package com.project.dictionary;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
